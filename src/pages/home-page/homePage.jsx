@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../../components/nav/Nav'
+import Nav from '../../components/nav/nav.jsx'
 import LandingPage from '../../components/blendix-landing-page/landing-page';
 import IntroPage from '../../components/introduction/introPage';
 import ProjectPage from '../../components/project-page/projectPage';
