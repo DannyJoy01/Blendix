@@ -6,7 +6,7 @@ import LagMallLogo from "../assets/icon/lagMallLogo.jsx";
 import AmanoFrame from "../assets/image/amanoFrame.jsx";
 import AmanoLogo from "../assets/icon/amanoLogo.jsx";
 import TechbitFrame from "../assets/image/techbitFrame.jsx";
-import TechbitLogo from "../assets/icon/techbitLogo.jsx";
+import TechbitLogo from "../assets/icon/techBitLogo.jsx";
 import LearnxploreFrame from "../assets/image/learnxploreFrame.jsx";
 import LearnxploreLogo from "../assets/icon/learnxploreLogo.jsx";
 import KoladFrame from "../assets/image/koladFrame.jsx";
