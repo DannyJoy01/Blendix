@@ -10,19 +10,19 @@ const LandingPage = () => {
   return (
     <div className="w-full flex flex-col pt-[120px] gap-8  md:flex-row justify-end items-center md:gap-16 mx-auto md:pt-[70px] m:flex-col  m:justify-center">
       {/* Left Section */}
-      <div className="w-full flex justify-center items-center md:w-[40%] flex-col pt-[40px] md:pt-[120px]">
+      <div className="w-full flex justify-center items-center md:w-[40%] flex-col pt-[40px] md:pt-[120px] m:full">
         <ClickBlendix />
 
         <div className="w-full flex flex-col justify-center items-center gap-2">
-          <h1 className=" w-[80%] text-[50px] leading-tight m:w-ful">
+          <h1 className=" w-[80%] text-[50px] leading-tight m:w-full m:text-[30px]">
             Designing , Impactful Digital Experiences.
           </h1>
-          <p className="w-[65%] font-normal text-[18px]">
+          <p className="w-[65%] font-normal text-[18px] m:w-full m:text-[14px] text-center">
             I specialize in turning complex ideas into intuitive user
             experiences that drive impact. From startups to edtech platforms, I
             create products that not only look good, but work beautifully.
           </p>
-          <p className="text-dix_yellow text-[16px] leading-none">
+          <p className="text-dix_yellow text-[16px] leading-none m:text-[14px]">
             Let’s build something users will love.
           </p>
         </div>
@@ -37,7 +37,7 @@ const LandingPage = () => {
       </div>
 
       {/* Right Section */}
-      <div className=" w-[78%] md:w-[50%] md:mt-0">
+      <div className=" w-[78%] md:w-[50%] md:mt-0 m:w-full m:mt-2">
         <LandingPgImg />
       </div>
     </div>
