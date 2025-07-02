@@ -6,7 +6,7 @@ const LandingPgImg = () => {
       <img
         src={landingPageImage}
         alt="Landing Page"
-        className="w-full max-w-[900px]  h-auto mx-auto"
+        className="w-full max-w-[900px] h-auto mx-auto"
       />
     </div>
   );

@@ -8,21 +8,26 @@ import LandingPgImg from "../../assets/icon/landingPgImg.jsx";
 
 const LandingPage = () => {
   return (
-    <div className="w-full pt-[120px] md:pt-[90px] flex justify-end items-center gap-16 md:gap-20 mx-auto">
-      <div className="w-[35%] flex flex-col pt-[120px] md:pt-[100px]">
+    <div className="w-full flex flex-col pt-[120px] gap-8  md:flex-row justify-end items-center md:gap-16 mx-auto md:pt-[70px] m:flex-col  m:justify-center">
+      {/* Left Section */}
+      <div className="w-full flex justify-center items-center md:w-[40%] flex-col pt-[40px] md:pt-[120px]">
         <ClickBlendix />
 
-        <div className="w-[90%] md:w-full flex flex-col gap-2 text-start">
-          <h1 className="text-[45px] md:text-[40px] leading-tight">
-            I’m <span className="text-dix_yellow">Olabanji</span>, a Product
-            Designer
+        <div className="w-full flex flex-col justify-center items-center gap-2">
+          <h1 className=" w-[80%] text-[50px] leading-tight m:w-ful">
+            Designing , Impactful Digital Experiences.
           </h1>
-          <p className="w-[73%] md:w-[67%] font-normal text-[15px] md:text-[12.5px]">
-            Designing Digital Experiences That Resonate & Convert.
+          <p className="w-[65%] font-normal text-[18px]">
+            I specialize in turning complex ideas into intuitive user
+            experiences that drive impact. From startups to edtech platforms, I
+            create products that not only look good, but work beautifully.
+          </p>
+          <p className="text-dix_yellow text-[16px] leading-none">
+            Let’s build something users will love.
           </p>
         </div>
 
-        <div className="flex items-center gap-6 mt-6">
+        <div className="hidden md:flex  items-center gap-6 mt-6">
           <BlendixTwitter />
           <BlendixBehance />
           <BlendixLinkedln />
@@ -32,7 +37,7 @@ const LandingPage = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-[50%]">
+      <div className=" w-[78%] md:w-[50%] md:mt-0">
         <LandingPgImg />
       </div>
     </div>

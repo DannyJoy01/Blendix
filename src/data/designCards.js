@@ -7,14 +7,14 @@ const designCards = [
     description: "A repository of brand logo design",
     image: adornCoutureLogo,
     buttonText: "To Brand Design",
-    gapClass: "gap-[257px]",
+    gapClass: "gap-[205px] md:gap-[257px]",
   },
   {
     title: "Social Media Flyer Design",
     description: "A repository of social media flier design",
     image: boot,
     buttonText: "To Social Media Design",
-    gapClass: "gap-[220px]",
+    gapClass: "gap-[168px] md:gap-[220px]",
   },
 ];
 

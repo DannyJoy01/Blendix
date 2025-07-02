@@ -22,11 +22,14 @@ export default {
       dix_grey:"#292929",
       dix_lightGreen:"#A8DF7F80",
       dix_hoverGreen:"#A8DF7F",
+      dix_green:"#008D53",
       dix_hoverBlue:"#593FBA",
       dix_orange:"#FF715B",
       dix_txtWhite:"#D9D9D9",
     },
     screens: {
+      m:'320px',
+      mm:'425px',
       sm: '640px',   // ≥640px
       md: '768px',   // ≥768px
       lg: '1024px',  // ≥1024px

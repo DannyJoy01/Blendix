@@ -6,7 +6,7 @@ const ClickBlendix = () => {
       <img
         src={clickBlendix}
         alt="Click Blendix"
-        className="w-[140px] md:w-[110px]"
+        className="hidden md:block w-[110px] "
       />
     </div>
   );
