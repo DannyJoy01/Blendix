@@ -2,8 +2,8 @@ import React from "react";
 
 const IntroPage = () => {
   return (
-    <div className="w-full h-[280px] pt-[330px] pb-[200px] md:h-[350px] flex justify-center items-center pt-[250px] font-pop">.
-      <div className="w-[86%] p-14 rounded-3xl md:w-[77%] bg-dix_blue h-[450px] md:h-[380px] p-24 md:p-18 flex flex-col justify-center gap-5 items-start text-start rounded-2xl">
+    <div className="w-full h-[280px] pt-[330px] pb-[200px] md:h-[350px] flex justify-center items-center md:pt-[250px] font-pop m:">.
+      <div className="w-[86%] p-14 rounded-3xl md:w-[77%] m:w-[100%] m:h-[35  0px] m:p-12 bg-dix_blue h-[450px] md:h-[380px] p-24 md:p-18 flex flex-col justify-center gap-5 items-start text-start rounded-2xl">
         <h1 className="font-bold text-[30px] font-inter text-dix_yellow">
           Intro...
         </h1>
