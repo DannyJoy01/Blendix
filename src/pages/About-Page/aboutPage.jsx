@@ -1,4 +1,3 @@
-import React from 'react'
 import Nav from '../../components/nav/nav.jsx';
 import AboutIntro from '../../components/About-Intro/aboutIntro.jsx';
 import Teaching from '../../components/teaching/teaching.jsx';
