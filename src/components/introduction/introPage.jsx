@@ -7,7 +7,7 @@ const IntroPage = () => {
         <h1 className="font-bold text-[30px] m:text-[26px] md:text-[32px] font-inter text-dix_yellow">
           Intro...
         </h1>
-        <p className="font-mtn text-[18px] m:text-[20px] font-normal leading-[27px] m:leading-[22px] md:leading-[30px]">
+        <p className="font-mtn text-[18px] m:text-[17px] font-normal leading-[27px] m:leading-[20px] md:leading-[30px] ">
           I am a creative thinker and problem solver who thrives in
           collaborative environments. My design journey began with a strong
           foundation in user-centered design principles, which I've consistently
