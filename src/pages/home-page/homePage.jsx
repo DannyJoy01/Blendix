@@ -14,7 +14,7 @@ const HomePage = () => {
       <IntroPage />
       <ProjectPage />
       <SubWorkPage />
-      <Teaching />
+      <Teaching marginTopClass="" />
       <Footer />
     </div>
   )

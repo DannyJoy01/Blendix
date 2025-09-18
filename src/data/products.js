@@ -13,7 +13,8 @@ import KoladFrame from "../assets/image/koladFrame.jsx";
 import KoladLogo from "../assets/icon/koladLogo.jsx";
 import ViewBtn from "../assets/icon/vpBtn.jsx";
 import ViewBtn2 from "../assets/icon/vpBtn2.jsx";
-
+import QandAFrame from "../assets/image/QandAFrame.jsx";
+import QandALogo from "../assets/icon/QandALogo.jsx";
 
 const projects = [
   {
@@ -25,7 +26,16 @@ const projects = [
     FrameComponent: TribearcFrame,
     LogoComponent: TribearcLogo,
     ViewButtonComponent: ViewBtn,
-
+    href: "https://tribearc.com/",
+  },
+  {
+    title: "Q & A",
+    type: "EdTech Resources app",
+    description:
+      "Q and A app is a platform for distributing and sourcing for educational resources. The resources are in text, audio and video formats.",
+    FrameComponent: QandAFrame,
+    LogoComponent: QandALogo,
+    ViewButtonComponent: ViewBtn2,
   },
   {
     title: "LagMall",
@@ -36,16 +46,15 @@ const projects = [
     LogoComponent: LagMallLogo,
     ViewButtonComponent: ViewBtn2,
   },
-   {
+  {
     title: "AMANO",
     type: "Software Engineering service website",
     description: "The Alumni of Maritime Academy of Nigeria website",
     FrameComponent: AmanoFrame,
     LogoComponent: AmanoLogo,
     ViewButtonComponent: ViewBtn,
-
   },
-   {
+  {
     title: "Techbit ",
     type: "SAAS product",
     description:
@@ -53,7 +62,7 @@ const projects = [
     FrameComponent: TechbitFrame,
     LogoComponent: TechbitLogo,
     ViewButtonComponent: ViewBtn,
-
+    href: "https://techbitdigital.com/",
   },
   {
     title: "Learnxplore ",
@@ -63,17 +72,16 @@ const projects = [
     status: "Case study in progress..... ",
     FrameComponent: LearnxploreFrame,
     LogoComponent: LearnxploreLogo,
-
   },
-  {
-    title: "Koladtowing ",
-    type: "towing service website",
-    description:
-      "Junk cars service offering fast, reliable removal of unwanted vehicles. ",
-    FrameComponent: KoladFrame,
-    LogoComponent: KoladLogo,
-    ViewButtonComponent: ViewBtn2,
-  },
+  // {
+  //   title: "Koladtowing ",
+  //   type: "towing service website",
+  //   description:
+  //     "Junk cars service offering fast, reliable removal of unwanted vehicles. ",
+  //   FrameComponent: KoladFrame,
+  //   LogoComponent: KoladLogo,
+  //   ViewButtonComponent: ViewBtn2,
+  // },
 ];
 
 export default projects;

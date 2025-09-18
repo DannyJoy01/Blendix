@@ -15,7 +15,7 @@ const Footer = () => {
           <img src={BlendixLogo} alt="Blendix Logo" className="w-[50px]" />
         </div>
 
-        <div className="w-[65%] text-[25px] md:w-[44%] md:text-[27px] p-9">
+        <div className="w-[65%] text-[25px] text-dix_white md:w-[44%] md:text-[27px] p-9">
           <p>Designer for 5+ years. I've loved every minute of it.</p>
         </div>
 

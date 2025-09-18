@@ -1,4 +1,3 @@
-import React from 'react'
 import tribearcLogo from '../../assets/icon/tribearc_logo.svg'
 const TribearcLogo = () => {
   return (

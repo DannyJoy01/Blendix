@@ -1,4 +1,3 @@
-import React from "react";
 import ClickBlendix from "../../assets/icon/clickBlendix.jsx";
 import BlendixPencil from "../../assets/icon/blendixPencil.jsx";
 import BlendixTwitter from "../../assets/icon/blendixTwitter.jsx";
@@ -8,39 +7,68 @@ import LandingPgImg from "../../assets/icon/landingPgImg.jsx";
 
 const LandingPage = () => {
   return (
-    <div className="w-full flex flex-col pt-[120px] gap-8 md:flex-row items-center md:gap-[80px] justify-end mx-auto md:pt-[120px]">
+    <div className="w-full min-h-screen flex flex-col px-4 sm:px-6 lg:px-8 pt-8 sm:pt-16 md:pt-20 lg:pt-[120px] gap-8 md:flex-row md:items-center md:justify-between md:gap-12 lg:gap-[80px] max-w-7xl mx-auto">
       {/* Left Section */}
-      <div className="w-full flex justify-center items-center md:w-[40%] flex-col pt-[40px] md:pt-[120px]">
-        <ClickBlendix />
+      <div className="w-full md:w-[50%] lg:w-[45%] flex flex-col items-center md:items-start justify-center space-y-6 md:space-y-8 pt-[80px] sm:pt-[100px] md:pt-[120px] lg:pt-[80px]">
+        {/* Logo */}
+        <div className="w-full flex justify-center md:justify-start">
+          <ClickBlendix />
+        </div>
 
-        <div className="w-full flex flex-col justify-center items-center gap-2 md:items-start">
-          <h1 className="w-[40%] m:w-full mm:text-[34px] sm:text-[40px] md:w-full text-[30px] md:text-[33px] leading-tight text-center md:text-start">
+        {/* Main Content */}
+        <div className="w-full flex flex-col items-center md:items-start space-y-4 md:space-y-6">
+          <h1 className="w-full max-w-md md:max-w-none text-2xl text-dix_white sm:text-3xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold leading-tight text-center md:text-left">
             Designing, Impactful Digital Experiences.
           </h1>
 
-          <p className="w-[65%] m:w-[95%] font-normal text-[14px] mm:text-[15px] sm:text-[16px] md:text-[14.5px] text-center md:text-start">
+          <p className="w-full text-dix_white max-w-lg md:max-w-none font-normal text-sm sm:text-base md:text-sm lg:text-base text-center md:text-left leading-relaxed">
             I specialize in turning complex ideas into intuitive user
             experiences that drive impact. From startups to edtech platforms, I
             create products that not only look good, but work beautifully.
           </p>
 
-          <p className="text-dix_yellow text-[14px] mm:text-[15px] sm:text-[16px] md:text-[16px] text-center md:text-start leading-none">
-            Let’s build something users will love.
+          <p className="text-dix_yellow text-sm sm:text-base md:text-base lg:text-lg text-center md:text-left font-medium">
+            Let's build something users will love.
           </p>
         </div>
 
-        <div className="w-full hidden md:flex items-center gap-6 mt-6">
-          <BlendixTwitter />
-          <BlendixBehance />
-          <BlendixLinkedln />
+        {/* Social Links - Hidden on mobile, shown on lg screen */}
+        <div className="hidden lg:flex items-center gap-4 lg:gap-6 mt-4 lg:mt-6">
+          <div className="hover:scale-110 transition-transform duration-200">
+            <BlendixTwitter />
+          </div>
+          <div className="hover:scale-110 transition-transform duration-200">
+            <BlendixBehance />
+          </div>
+          <div className="hover:scale-110 transition-transform duration-200">
+            <BlendixLinkedln />
+          </div>
         </div>
 
-        <BlendixPencil />
+        {/* Pencil Icon */}
+        <div className="w-full flex justify-center md:justify-start mt-4 md:mt-6">
+          <BlendixPencil />
+        </div>
       </div>
 
       {/* Right Section */}
-      <div className="w-[78%] md:w-[47%] md:mt-0 m:mt-2 mm:mt-4 sm:mt-6">
-        <LandingPgImg />
+      <div className="w-full md:w-[50%] lg:w-[55%] flex justify-center md:justify-end mt-8 md:mt-0">
+        <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+          <LandingPgImg />
+        </div>
+      </div>
+
+      {/* Mobile Social Links */}
+      <div className="flex md:hidden items-center justify-center gap-6 mt-8 pb-8">
+        <div className="hover:scale-110 transition-transform duration-200">
+          <BlendixTwitter />
+        </div>
+        <div className="hover:scale-110 transition-transform duration-200">
+          <BlendixBehance />
+        </div>
+        <div className="hover:scale-110 transition-transform duration-200">
+          <BlendixLinkedln />
+        </div>
       </div>
     </div>
   );

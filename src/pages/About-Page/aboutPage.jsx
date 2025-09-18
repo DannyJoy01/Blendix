@@ -7,7 +7,7 @@ const AboutPage = () => {
     <div>
       <Nav />
       <AboutIntro />
-      <Teaching />
+      <Teaching marginTopClass="mt-80 md:mt-0" />
       <Footer />
     </div>
   )

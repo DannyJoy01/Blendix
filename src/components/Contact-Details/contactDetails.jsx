@@ -4,30 +4,31 @@ import EmailVector from "../../assets/icon/email_vector.svg";
 import DailVector from "../../assets/icon/dial_vector.svg";
 const ContactDetails = () => {
   return (
-    <div className="w-full flex flex-col h-[130vh] font-mont justify-center pt-20">
-
-      <div className="flex flex-col items-center justify-center p-20 gap-3">
-        <h2 className="text-dix_orange font-mtn">Connect with me</h2>
-        <p className="w-[42%] text-[17px]">
+    <div className="w-full flex flex-col justify-center font-mont pt-10 md:pt-20">
+      {/* Header section */}
+      <div className="flex flex-col items-center justify-center p-4 md:p-20 gap-3 text-center">
+        <h2 className="text-dix_orange font-mtn text-xl md:text-3xl">Connect with me</h2>
+        <p className="w-full md:w-[60%] lg:w-[42%] text-sm md:text-[17px] text-dix_white leading-5 md:leading-7 lg:leading-8">
           I am always excited to explore new opportunities and collaborate on
           innovative projects.
         </p>
+
       </div>
 
-      {/*  */}
-      <div className="w-full flex justify-center items-center gap-4">
-        <div className="w-[38%] rounded-2xl h-[425px]">
-          <img src={ContactImage} alt="Contact" className="w-full h-full" />
+      <div className="w-full flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 md:gap-4 px-4">
+        {/* Image section */}
+        <div className="w-full md:w-[45%] lg:w-[38%] rounded-2xl">
+          <img src={ContactImage} alt="Contact" className="w-full h-full object-cover" />
         </div>
-        {/*  */}
-        <div className="w-[42%] h-[425px] flex flex-col text-start gap-6 font-inter p-12  shadow-xl bg-nav_bg rounded-xl">
+        {/* Contact details section */}
+        <div className="w-full md:w-[50%] lg:w-[42%] flex flex-col text-start gap-4 md:gap-6 font-inter p-6 md:p-12 shadow-xl bg-nav_bg rounded-xl">
           <div className="w-full gap-3">
-            <p className="text-[15px]">
+            <p className="text-[13px] md:text-[15px] text-dix_white leading-relaxed">
               If you'd like to get in touch or discuss potential collaborations,
               please feel free to contact me.
             </p>
-            <h2 className="text-[19px]">
-              connect on{" "}
+            <h2 className="text-[17px] md:text-[19px] text-dix_white font-semibold mt-2">
+              Connect on{" "}
               <a
                 href="https://www.linkedin.com/in/your-profile"
                 className="text-dix_hoverBlue visited:text-purple-700 underline"
@@ -35,19 +36,18 @@ const ContactDetails = () => {
                 rel="noopener noreferrer"
               >
                 LinkedIn
-              </a>{" "}
+              </a>
             </h2>
           </div>
-          <div className="flex flex-col gap-4">
-            <p className="flex gap-3">
-              {" "}
-              <img src={EmailVector} alt="Email" className="w-[15px]" />{" "}
+          <div className="flex flex-col gap-3 md:gap-4 text-dix_white">
+            <p className="flex items-center gap-3 text-sm md:text-base">
+              <img src={EmailVector} alt="Email" className="w-[15px]" />
               4designspacce@gmail.com
             </p>
-            <p className="flex gap-3 ">
-              {" "}
-              <img src={DailVector} alt="Phone" className="w-[17px]" /> (+234)
-              811 1883 671 (+234) 907 7489 627
+            <p className="flex flex-wrap items-center gap-3 text-sm md:text-base">
+              <img src={DailVector} alt="Phone" className="w-[17px]" />
+              <a href="tel:+2348111883671" className="whitespace-nowrap">(+234) 811 1883 671</a>
+              <a href="tel:+2349077489627" className="whitespace-nowrap">(+234) 907 7489 627</a>
             </p>
           </div>
         </div>
