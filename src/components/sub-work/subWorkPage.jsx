@@ -1,18 +1,22 @@
-import React from "react";
 import arrowForward from "../../assets/icon/arc_arrowfw.svg";
 import designCards from "../../data/designCards";
+import { motion } from 'framer-motion';
 
 const SubWorkPage = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-12 pt-[180px] px-4">
+    <div className="w-full flex flex-col justify-center items-center gap-12 pt-[60px] md:pt-[120px] px-4">
       <p className="text-2xl md:text-3xl text-dix_white text-center">
         I do graphics design too.
       </p>
 
       <div className="w-full flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 md:gap-9">
         {designCards.map((card, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 50 }} // starts slightly below & invisible
+            whileInView={{ opacity: 1, y: 0 }} // animates up smoothly
+            transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }} // staggered animation
+            viewport={{ once: true }} // animates only once when in view
             className="w-full sm:w-[48%] md:w-[30%] flex flex-col rounded-xl shadow-xl bg-nav_bg"
           >
             {/* Image */}
@@ -38,12 +42,12 @@ const SubWorkPage = () => {
                 <span>{card.buttonText}</span>
                 <img src={arrowForward} alt="Arrow Forward" className="w-3 h-3 md:w-4" />
               </button>
-
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
+
   );
 };
 

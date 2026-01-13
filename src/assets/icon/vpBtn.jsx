@@ -1,6 +1,7 @@
 import tribearcIcon from "../../assets/icon/arc_arrowfw.svg";
 
 const ViewBtn = ({ href }) => {
+
   return (
     <a
       href={href}

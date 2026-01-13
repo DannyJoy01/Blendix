@@ -1,13 +1,15 @@
-import React from "react";
-
 const IntroPage = () => {
   return (
-    <div className="w-full pt-[330px] pb-[200px] h-[280px] md:h-[350px] m:pt-[350px] flex justify-center items-center font-pop">
-      <div className="w-[86%] md:w-[73%] m:w-full bg-dix_blue p-14 m:p-12 md:p-18 h-[450px] md:h-[380px] m:h-[390px] rounded-3xl md:rounded-2xl flex flex-col justify-center gap-5 items-start text-start">
-        <h1 className="font-bold text-[30px] m:text-[26px] md:text-[32px] font-inter text-dix_yellow">
+    <div className="w-full flex justify-center items-center font-pop pt-10 md:pt-[20px] pb-24 md:pb-[40px]">
+      <div className="w-[85%] md:w-[73%] lg:w-[65%] bg-dix_blue p-8 md:p-14 rounded-3xl flex flex-col justify-center gap-5 items-start text-start min-h-[300px]">
+        <h1
+          className="mt-[-25px] font-normal text-[26px] sm:text-[28px] md:text-[32px] 
+  font-inter text-dix_yellow tracking-wide"
+        >
           Intro...
         </h1>
-        <p className="font-mtn text-dix_white text-[18px] m:text-[17px] font-normal leading-[27px] m:leading-[20px] md:leading-[30px] ">
+
+        <p className="text-dix_white text-[17px] md:text-[18px] !font-light leading-relaxed md:leading-[30px]">
           I am a creative thinker and problem solver who thrives in
           collaborative environments. My design journey began with a strong
           foundation in user-centered design principles, which I've consistently

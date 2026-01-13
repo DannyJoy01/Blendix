@@ -1,13 +1,18 @@
+import React, { Suspense } from "react";
 import ClickBlendix from "../../assets/icon/clickBlendix.jsx";
 import BlendixPencil from "../../assets/icon/blendixPencil.jsx";
 import BlendixTwitter from "../../assets/icon/blendixTwitter.jsx";
 import BlendixLinkedln from "../../assets/icon/blendixLinkedln.jsx";
 import BlendixBehance from "../../assets/icon/blendixBehance.jsx";
-import LandingPgImg from "../../assets/icon/landingPgImg.jsx";
+const LandingPgImg = React.lazy(() =>
+  import("../../assets/icon/landingPgImg.jsx")
+);
 
 const LandingPage = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col px-4 sm:px-6 lg:px-8 pt-8 sm:pt-16 md:pt-20 lg:pt-[120px] gap-8 md:flex-row md:items-center md:justify-between md:gap-12 lg:gap-[80px] max-w-7xl mx-auto">
+    <div className="w-full min-h-screen flex flex-col px-4 sm:px-6 lg:px-8 
+  pt-6 sm:pt-10 md:pt-14 lg:pt-16   /* reduced from 8/16/20/120px */
+  gap-8 md:flex-row md:items-center md:justify-between md:gap-12 lg:gap-[80px] max-w-7xl mx-auto">
       {/* Left Section */}
       <div className="w-full md:w-[50%] lg:w-[45%] flex flex-col items-center md:items-start justify-center space-y-6 md:space-y-8 pt-[80px] sm:pt-[100px] md:pt-[120px] lg:pt-[80px]">
         {/* Logo */}
@@ -17,7 +22,12 @@ const LandingPage = () => {
 
         {/* Main Content */}
         <div className="w-full flex flex-col items-center md:items-start space-y-4 md:space-y-6">
-          <h1 className="w-full max-w-md md:max-w-none text-2xl text-dix_white sm:text-3xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold leading-tight text-center md:text-left">
+          <h1
+            className="w-full max-w-md md:max-w-none 
+  text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-[40px] 
+  font-bold text-center md:text-left text-dix_white 
+  leading-[2.8rem] md:leading-[3.2rem] lg:leading-[4rem]"
+          >
             Designing, Impactful Digital Experiences.
           </h1>
 
@@ -53,8 +63,12 @@ const LandingPage = () => {
 
       {/* Right Section */}
       <div className="w-full md:w-[50%] lg:w-[55%] flex justify-center md:justify-end mt-8 md:mt-0">
-        <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
-          <LandingPgImg />
+        <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl animate-float">
+          <Suspense
+            fallback={<p className="text-dix_white">Image loading...</p>}
+          >
+            <LandingPgImg />
+          </Suspense>
         </div>
       </div>
 

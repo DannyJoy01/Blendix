@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import BlendixLogo from '../../assets/icon/blendixLogo.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,8 +8,10 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='w-full h-[110px] flex justify-between items-center px-6 md:px-24 bg-nav_bg text-nt_col fixed top-0 z-50'>
-      <BlendixLogo />
+    <div className='w-full flex justify-between items-center pt-4 pb-4 md:px-24 bg-nav_bg text-nt_col fixed top-0 z-50'>
+      <div className="ml-5 md:ml-0">
+        <BlendixLogo />
+      </div>
 
       {/* Desktop Menu */}
       <ul className='hidden md:flex gap-6 text-[17px] font-medium'>
@@ -25,13 +27,16 @@ const Nav = () => {
       </ul>
 
       {/* Hamburger Icon (Mobile Only) */}
-      <div className='md:hidden text-2xl cursor-pointer' onClick={() => setMenuOpen(!menuOpen)}>
+      <div
+        className='md:hidden mr-5 text-2xl cursor-pointer'
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className='absolute top-[110px] left-0 w-full bg-nav_bg flex flex-col items-center gap-6 py-6 text-[17px] font-medium md:hidden z-40'>
+        <ul className='absolute top-[64px] left-0 w-full bg-nav_bg flex flex-col items-center gap-6 py-6 text-[17px] font-medium md:hidden z-40'>
           <li className='hover:text-dix_white'>
             <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
@@ -44,6 +49,7 @@ const Nav = () => {
         </ul>
       )}
     </div>
+
   );
 };
 
